@@ -1,0 +1,51 @@
+<h: form> 
+//she wont indent like it usually does btu we need to do indents, that should be done by program
+<h3>Select One</h3>
+<h:selectOneMenu Value="#{selectBean.choice}"> /*a drop down box*/ 
+	<f:selectItem itemValue="1" itemLabel="One"/> 
+	/*make your drop down say 1,2,3,4 so repeat this 3 more times*/
+	<f:selectItem itemValue="2" itemLabel="Two"/> 
+	<f:selectItem itemValue="3" itemLabel="Three"/> 
+	<f:selectItem itemValue="4" itemLabel="Four"/> 
+</h:selectOneMenu>
+
+/*we need a listener for this*/
+
+<p><h:commandButton value="Submit" actionListener="#{selectBean.attrListener}"
+	action ="answer"/></p>
+	/*when i hit that button submit do that action then go to that answer xhtml*/
+</h:form> 
+
+*******************************************************
+//if i were in my bean 
+public void attrListener()
+{
+	switch(choice)
+	{
+		case "1": choice = "one";
+	}
+}
+//this is what we have to do when we do our hw 
+//we're going to have a drop down and then we hit the submit button 
+then we have to go to the actionlistner 
+based on what was selected we call the right method for it 
+switch on choice, case divide then you call the method to divide 
+case add, call the method to add 
+
+now the trick is this is all text so what do you have to do?
+you're going to have to parse this text into numbers 
+
+this will get you set up with your select option 
+your labels will be add, subtract, etc 
+when you attach your listener you will come in and you will say 
+if it was add you call add and so forth 
+
+set choice to something to help ourselves 
+
+go and get the value of choice and if you dont have it preset to 
+something youre going to get an error 
+
+for the homework call it calculateBean 
+2 numbers, a variable for the choice thing 
+get and sets for all of those 
+and you need a listener 
