@@ -11,8 +11,8 @@ import javax.faces.bean.ManagedBean;
  *
  * @author Iris Osegueda
  */
-@ManagedBean(name="calculateBean")
-public class calculateBean {
+@ManagedBean(name="calculatorBean")
+public class calculatorBean {
     private int num1;
     private int num2;
     private int choice;

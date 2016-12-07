@@ -11,23 +11,23 @@
         <h:form>
             <h:panelGrid columns="2">
                 Number1: 
-                <h:inputText id="num1" value="#{calculateBean.num1}" 
+                <h:inputText id="num1" value="#{calculatorBean.num1}" 
                     size="20" required="true"
                     label="Number1" >
                 </h:inputText>
                 Number2: 
-                <h:inputText id="username" value="#{calculateBean.num2}" 
+                <h:inputText id="username" value="#{calculatorBean.num2}" 
                     size="20" required="true"
                     label="Number2" >
                 </h:inputText>
-                <h:selectOneMenu value="#{calculateBean.choice}">
+                <h:selectOneMenu value="#{calculatorBean.choice}">
                     <f:selectItem  itemValue="1"  itemLabel="Add" />
                     <f:selectItem  itemValue="2"  itemLabel="Subtract" />
                     <f:selectItem  itemValue="3"  itemLabel="Multiply" />
                     <f:selectItem  itemValue="4"  itemLabel="Divide" />
                 </h:selectOneMenu>
             </h:panelGrid>
-            <h:commandButton value="Calculate" actionListener="#{calculateBean.listener}" action="answer" />
+            <h:commandButton value="Calculate" actionListener="#{calculatorBean.listener}" action="answer" />
         </h:form>
     </h:body>
 </html>
