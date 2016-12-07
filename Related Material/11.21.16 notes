@@ -1,0 +1,43 @@
+test, class, runner for each class
+you dont test straight gets and sets 
+you have to write the classes 
+you do have to do withdraw and deposit on account 
+you have to check that theres $50 to open the account 
+
+when you get to the others you dont have to do get or set interest rates unless theres something 
+weird going on 
+they can only have so many withdrawals so you have to check that 
+
+each class will ahve their own test class and runner
+make sure you try to cover all the cases 
+
+make sure that if you have to check its positive do one thats negative 
+
+create an account that has $50 and one that doesn't have the $50 so you can check 
+
+on checking account, theres no owner and stuff in the constructor
+its supposed to be in there though 
+we can pretend that we're only working with 1 month so you dont have to check dates 
+
+an instance just will not be created(throw exeption) if there's not $50 
+*********************************************************************************************************************
+
+netbeans.org
+download, far right where it says all, download and install (last column, 
+theres a dl button under it)
+
+open ch30 look at figure 30.4 and it'll tell you exactly how to set up that example 
+we're supposed to run something called webtime 
+
+REMEMBER THAT WHEN I HAVE THIS IN MY SERVER FACES AND I SAY PROPERTY TIME THAT I HAVE TO HAVE A GET
+SET OR SOMETHING THAT HAS THAT 2ND NAME AS THE PROPERTY IM LOOKING FOR 
+
+build your own index and bean and all you need to do is a getName 
+your index page webmain.name 
+in the book it says lets do an example from scratch 30.4.3 follow it exactly, just dont call 
+it time, call it something else 
+
+use the time as an example just make it return something that isnt time 
+
+just work on it soyou know well enough how to use/do a bean 
+if you dont want to write your own code just do the example one in the book 
