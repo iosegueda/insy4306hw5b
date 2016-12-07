@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Welcome</title>
+    </h:head>
+    <h:body>
+        <h3>Please enter two integers</h3>
+        <h:form>
+            <h:panelGrid columns="2">
+                Number1: 
+                <h:inputText id="num1" value="#{calculateBean.num1}" 
+                    size="20" required="true"
+                    label="Number1" >
+                </h:inputText>
+                Number2: 
+                <h:inputText id="username" value="#{calculateBean.num2}" 
+                    size="20" required="true"
+                    label="Number2" >
+                </h:inputText>
+                <h:selectOneMenu value="#{calculateBean.choice}">
+                    <f:selectItem  itemValue="1"  itemLabel="Add" />
+                    <f:selectItem  itemValue="2"  itemLabel="Subtract" />
+                    <f:selectItem  itemValue="3"  itemLabel="Multiply" />
+                    <f:selectItem  itemValue="4"  itemLabel="Divide" />
+                </h:selectOneMenu>
+            </h:panelGrid>
+            <h:commandButton value="Calculate" actionListener="#{calculateBean.listener}" action="answer" />
+        </h:form>
+    </h:body>
+</html>
+

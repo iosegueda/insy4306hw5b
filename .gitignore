@@ -1,2 +1,4 @@
 *.class
 ~$*
+/hw5b/nbproject/private/
+/hw5b/build/
